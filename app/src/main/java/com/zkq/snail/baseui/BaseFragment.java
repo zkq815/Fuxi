@@ -7,4 +7,8 @@ package com.zkq.snail.baseui;
  */
 
 public class BaseFragment {
+
+
+
+
 }
