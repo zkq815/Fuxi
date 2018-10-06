@@ -5,11 +5,17 @@ import android.os.Handler;
 import android.os.Bundle;
 import android.view.View;
 
-import com.zkq.snail.MainActivity;
+import com.zkq.snail.ui.main.MainActivity;
 import com.zkq.snail.R;
-import com.zkq.snail.baseui.BaseActivity;
+import com.zkq.snail.base.ui.BaseActivity;
+
+/**
+ * @author zkq
+ *
+ * */
 
 public class WelcomeActivity extends BaseActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,4 +37,5 @@ public class WelcomeActivity extends BaseActivity {
     protected void onDestroy() {
         super.onDestroy();
     }
+
 }

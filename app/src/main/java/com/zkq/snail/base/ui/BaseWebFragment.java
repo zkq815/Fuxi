@@ -1,4 +1,4 @@
-package com.zkq.snail.baseui;
+package com.zkq.snail.base.ui;
 
 /**
  * Created by zkq

@@ -3,31 +3,24 @@
     <data>
 
     </data>
-
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zkq.snail.ui.main.MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context="com.zkq.snail.ui.welcome.WelcomeActivity">
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <com.zkq.snail.customview.viewpager.ScrollableViewPager
-            android:id="@+id/home_viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="48dp" />
-
-        <com.zkq.snail.customview.navigation.NavigationWidget
-            android:id="@+id/home_navigation_widget"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" />
-
+            android:textColor="@color/red"
+            android:layout_centerInParent="true"
+            android:textSize="28sp"
+            android:text="首屏页面"/>
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

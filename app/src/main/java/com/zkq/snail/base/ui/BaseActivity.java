@@ -1,4 +1,4 @@
-package com.zkq.snail.baseui;
+package com.zkq.snail.base.ui;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -30,8 +30,10 @@ public class BaseActivity extends AppCompatActivity {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                     |View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-            getWindow().setStatusBarColor(Color.TRANSPARENT);//状态栏设置为透明背景色
-            getWindow().setNavigationBarColor(Color.TRANSPARENT);//虚拟底部操作栏背景颜色设置
+            //状态栏设置为透明背景色
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
+            //虚拟底部操作栏背景颜色设置
+            getWindow().setNavigationBarColor(Color.TRANSPARENT);
         }
     }
 

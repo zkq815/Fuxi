@@ -1,6 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorSearchBg">#f1f1f1</color>
+    <color name="white">#FFffff</color>
+    <color name="black">#000000</color>
+    <color name="black_title">#444444</color>
+    <color name="grey_8">#888888</color>
+    <color name="grey_999">#999999</color>
+    <color name="grey_91">#919191</color>
+    <color name="grey_929292">#929292</color>
+    <color name="grey_929295">#929295</color>
+    <color name="grey_tv_answer">#666666</color>
+    <color name="grey_d9d9d9">#D9D9D9</color>
+    <color name="grey_666">#666666</color>
+    <color name="grey_333">#333333</color>
+    <color name="grey_3e">#3e3e3e</color>
+    <color name="grey_bg">#eeeeee</color>
+    <color name="grey_d">#dddddd</color>
+    <color name="grey_fa">#fafafa</color>
+    <color name="grey_b">#bbbbbb</color>
+    <color name="grey_f9">#f9f9f9</color>
+    <color name="grey_disable">#999999</color>
+    <color name="grey_c">#cccccc</color>
+    <color name="grey_e">#eeeeee</color>
+
+    <color name="blue_theme">#00c3f5</color>
+    <color name="blue">#00a5f5</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="default_bg_color">#e5e5e5</color>
+
+    <color name="divide_line_color">#dddddd</color>
+    <color name="default_text_color">#333333</color>
+    <color name="unclick_text_color">#999999</color>
+
+    <color name="red_bg">#f0415f</color>
+    <color name="red_bg_80">#bbf0415f</color>
+    <color name="coupon_single">#f09646</color>
+    <color name="coupon_multi">#f0415f</color>
+    <color name="grey">#cbcccd</color>
+
+    <!-- toast -->
+    <color name="toast_bg_color">#d8333333</color>
+
+    <color name="page_detail_bg">#fff2f2f2</color>
+    <color name="grey_bg_f2">#f2f2f2</color>
+
+    <color name="font_grey_3">#333333</color>
+    <color name="font_grey_6">#666666</color>
+
+    <color name="theme_blue">#198DED</color>
+    <color name="theme_limegreen">#3BC06B</color>
+    <color name="theme_seagreen">#04C0CF</color>
+    <color name="theme_gray">#7E97AC</color>
+
+    <color name="theme_crimson">#D33A2A</color>
+    <color name="theme_firebrick">#F12528</color>
+    <color name="theme_tomato">#FC5B23</color>
+    <color name="theme_coral">#FFBE26</color>
+
+    <!-- 黑色透明度 -->
+    <color name="black_alpha_0">#ff000000</color>
+    <color name="black_alpha_5">#f2000000</color>
+    <color name="black_alpha_10">#e5000000</color>
+    <color name="black_alpha_15">#d8000000</color>
+    <color name="black_alpha_20">#cc000000</color>
+    <color name="black_alpha_25">#bf000000</color>
+    <color name="black_alpha_30">#b2000000</color>
+    <color name="black_alpha_35">#a5000000</color>
+    <color name="black_alpha_40">#99000000</color>
+    <color name="black_alpha_45">#8c000000</color>
+    <color name="black_alpha_50">#7f000000</color>
+    <color name="black_alpha_55">#72000000</color>
+    <color name="black_alpha_60">#66000000</color>
+    <color name="black_alpha_65">#59000000</color>
+    <color name="black_alpha_70">#4c000000</color>
+    <color name="black_alpha_75">#3f000000</color>
+    <color name="black_alpha_80">#33000000</color>
+    <color name="black_alpha_85">#21000000</color>
+    <color name="black_alpha_90">#19000000</color>
+    <color name="black_alpha_95">#0c000000</color>
+    <color name="black_alpha_100">#00000000</color>
+    <color name="black_32">#323232</color>
+    <!-- 红色透明度 -->
+    <color name="red_alpha_0">#ffeb4561</color>
+    <color name="red_alpha_10">#e5eb4561</color>
+
+    <!-- 黄色透明度 -->
+    <color name="yellow_alpha_0">#FFF1B325</color>
+
+    <!-- empty view -->
+    <color name="empty_info_text_color">#66000000</color>
+
+    <color name="home_gradient_bg">#999999</color>
+    <color name="blue_config_selected">#21c4f3</color>
+    <color name="blue_category_selected">#E4F9FD</color>
+    <color name="cate_indicator_text_blue">#21c4f3</color>
+
+
+    <!-- drawer -->
+    <color name="menu_item_text_color">@color/font_grey_3</color>
+    <color name="menu_message_notify">#ff3400</color>
+
+    <!-- home -->
+    <color name="view_pager_indicator_selected">@color/blue</color>
+    <color name="view_pager_indicator_unselected">#d8d8d8</color>
+
+    <!-- home floor -->
+    <color name="points_blue">#00A5F5</color>
+    <color name="points_original_price_color">#BBBBBB</color>
+    <color name="points_continuous">#1AFFFFFF</color>
+    <color name="points_continuous_signed">#33FFFFFF</color>
+
+    <!--category-->
+    <color name="vertical_background">#fafafa</color>
+    <color name="vertical_background_selected">#ffffff</color>
+
+    <color name="colorAccent">#33CCCCCC</color>
+
+    <color name="color_e5">#e5e5e5</color>
+    <!--shop -->
+    <color name="sort_catagory">#FFE0E0E0</color>
+    <color name="split_line_color">#ffc9d1d9</color>
+    <color name="grey_97">#979797</color>
+
+    <color name="red">#ffeb4561</color>
+    <color name="red_20">#cceb4561</color>
+
+    <!-- 领优惠券 -->
+    <color name="coupon_center_get_red">#ffeb4561</color>
+    <color name="coupon_center_get_blue">#00A5F5</color>
+
+
+    <color name="color_badge">#ef2828</color>
+    <color name="black_5_rgb">#f2f2f2</color>
+    <color name="black_10_rgb">#e5e5e5</color>
+    <color name="white_30">#4dFFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="price_color">#EB4561</color>
+    <color name="blue_title_line">#198DED</color>
+
+    <color name="flash_sale_bg">#fdf8ee</color>
+    <color name="flash_sale_red">#f61d45</color>
 </resources>
