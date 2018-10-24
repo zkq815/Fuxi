@@ -13,9 +13,10 @@ import com.zkq.snail.base.ui.BaseFragment;
 import com.zkq.snail.databinding.FragmentDefaultBinding;
 
 /**
- * Created by zkq
- * on 2018/8/26.
- * 首页
+ * @author:zkq
+ * create:2018/10/24 上午11:42
+ * email:zkq815@126.com
+ * desc: 首页
  */
 
 public class DefaultFragment extends BaseFragment implements DefaultContract.View{

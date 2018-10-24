@@ -8,12 +8,11 @@ import android.util.SparseArray;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-
 /**
- * Description:
- *
- * @author caiweixin
- * @since 5/24/16.
+ * @author:zkq
+ * create:2018/10/24 上午11:45
+ * email:zkq815@126.com
+ * desc:
  */
 public class ViewPagerWrapper<T extends Object> {
     private ScrollableViewPager mViewPager;

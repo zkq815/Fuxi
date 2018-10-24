@@ -5,9 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Description:
- *
- * @author zkq on 2016/12/15.
+ * @author:zkq
+ * create:2018/10/24 上午11:45
+ * email:zkq815@126.com
+ * desc:
  */
 public class CheckData {
     public static boolean hasData(Collection<?> data) {

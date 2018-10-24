@@ -11,10 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Description:
- *
- * @author ruhaiwen
- * @since 2/23/17.
+ * @author:zkq
+ * create:2018/10/24 上午11:45
+ * email:zkq815@126.com
+ * desc:
  */
 public class BasePagerAdapter<T> extends FragmentPagerAdapter {
 

@@ -16,8 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by zkq
- * on 18-10-6.
+ * @author zkq
+ * @since 2018/10/24
  */
 
 public class NavigationWidget extends RelativeLayout {

@@ -10,10 +10,11 @@ import com.zkq.snail.R;
 import com.zkq.snail.base.ui.BaseActivity;
 
 /**
- * @author zkq
- *
- * */
-
+ * @author:zkq
+ * create:2018/10/24 上午11:45
+ * email:zkq815@126.com
+ * desc:
+ */
 public class WelcomeActivity extends BaseActivity {
 
 

@@ -5,10 +5,11 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-
 /**
- * @author zkq
- * on 15-7-20.
+ * @author:zkq
+ * create:2018/10/24 上午11:45
+ * email:zkq815@126.com
+ * desc:
  */
 public class ScrollableViewPager extends ViewPager {
     private boolean isPagingEnabled = true;

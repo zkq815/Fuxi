@@ -3,8 +3,10 @@ package com.zkq.snail.ui.main.toolutil;
 import android.app.Activity;
 
 /**
- * Created by zkq
- * on 2018/1/23.
+ * @author:zkq
+ * create:2018/10/24 上午11:45
+ * email:zkq815@126.com
+ * desc:
  */
 
 public class CheckActivity {

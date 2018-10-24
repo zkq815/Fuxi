@@ -5,8 +5,8 @@ import android.support.annotation.NonNull;
 import com.zkq.snail.ui.main.memory.MemoryContract;
 
 /**
- * author:zkq
- * time:2018/10/6:16:11
+ * @author:zkq
+ * create:2018/10/24 上午11:43
  * email:zkq815@126.com
  */
 public class ExplorePresenter implements ExploreContract.Presenter{

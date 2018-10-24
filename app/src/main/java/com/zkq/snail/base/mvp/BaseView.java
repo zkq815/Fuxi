@@ -18,6 +18,10 @@ package com.zkq.snail.base.mvp;
 
 import android.support.annotation.NonNull;
 
+/**
+ * @author zkq
+ * @since 2018/10/24
+ */
 public interface BaseView<T> {
 
     void setPresenter(@NonNull T presenter);

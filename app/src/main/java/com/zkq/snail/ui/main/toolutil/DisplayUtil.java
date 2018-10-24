@@ -8,8 +8,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Description: 显示相关util
- *Created by meizu on 3/1/18.
+ * @author:zkq
+ * create:2018/10/24 上午11:44
+ * email:zkq815@126.com
+ * desc:
  */
 public class DisplayUtil {
     private static int mScreenWidth;

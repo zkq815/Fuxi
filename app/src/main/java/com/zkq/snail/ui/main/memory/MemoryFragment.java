@@ -13,9 +13,10 @@ import com.zkq.snail.base.ui.BaseFragment;
 import com.zkq.snail.databinding.FragmentMemoryBinding;
 
 /**
- * Created by zkq
- * on 2018/8/26.
- * 记忆页面
+ * @author:zkq
+ * create:2018/10/24 上午11:42
+ * email:zkq815@126.com
+ * desc: 记忆页面
  */
 
 public class MemoryFragment extends BaseFragment implements MemoryContract.View {

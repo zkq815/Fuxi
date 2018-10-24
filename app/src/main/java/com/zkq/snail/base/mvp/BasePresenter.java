@@ -16,6 +16,10 @@
 
 package com.zkq.snail.base.mvp;
 
+/**
+ * @author zkq
+ * @since 2018/10/24
+ */
 public interface BasePresenter {
 
     void subscribe();

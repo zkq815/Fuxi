@@ -4,10 +4,11 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
 
-
 /**
- * Created by zkq
- * on 2018/1/23.
+ * @author:zkq
+ * create:2018/10/24 上午11:46
+ * email:zkq815@126.com
+ * desc:
  */
 public class HomePresenter implements HomeContract.Presenter {
 

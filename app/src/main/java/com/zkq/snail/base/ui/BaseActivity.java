@@ -8,8 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 /**
- * Created by zkq
- * on 2018/8/26.
+ * @author zkq
+ * @since 2018/10/24
+ *
  * 基类Activity
  */
 

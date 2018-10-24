@@ -3,8 +3,10 @@ package com.zkq.snail.ui.main;
 import android.os.Parcelable;
 
 /**
- * Created by zkq
- * on 2018/3/19.
+ * @author:zkq
+ * create:2018/10/24 上午11:44
+ * email:zkq815@126.com
+ * desc:
  */
 
 public interface ChangePageListener extends Parcelable {

@@ -5,7 +5,7 @@ import android.support.annotation.NonNull;
 import com.zkq.snail.ui.main.home.DefaultContract;
 
 /**
- * author:zkq
+ * @author:zkq
  * time:2018/10/6:16:11
  * email:zkq815@126.com
  */

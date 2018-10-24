@@ -13,9 +13,10 @@ import com.zkq.snail.base.ui.BaseFragment;
 import com.zkq.snail.databinding.FragmentToolsBinding;
 
 /**
- * Created by zkq
- * on 2018/8/26.
- * 工具类页面
+ * @author:zkq
+ * create:2018/10/24 上午11:43
+ * email:zkq815@126.com
+ * desc: 工具页面
  */
 
 public class ToolsFragment extends BaseFragment implements ToolsContract.View{

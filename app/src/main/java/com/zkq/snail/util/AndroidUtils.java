@@ -1,9 +1,10 @@
 package com.zkq.snail.util;
 
 /**
- * Created by zkq
- * on 2018/8/27.
+ * @author:zkq
+ * create:2018/10/24 上午11:47
+ * email:zkq815@126.com
+ * desc:
  */
-
 public class AndroidUtils {
 }

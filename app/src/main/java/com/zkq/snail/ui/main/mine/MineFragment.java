@@ -13,9 +13,10 @@ import com.zkq.snail.base.ui.BaseFragment;
 import com.zkq.snail.databinding.FragmentMineBinding;
 
 /**
- * Created by zkq
- * on 2018/8/26.
- * 我的页面
+ * @author:zkq
+ * create:2018/10/24 上午11:43
+ * email:zkq815@126.com
+ * desc: 我的页面
  */
 
 public class MineFragment extends BaseFragment implements MineContract.View{

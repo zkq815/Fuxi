@@ -25,7 +25,6 @@ import com.zkq.snail.ui.main.memory.MemoryFragment;
 import com.zkq.snail.ui.main.memory.MemoryPresenter;
 import com.zkq.snail.ui.main.mine.MineFragment;
 import com.zkq.snail.ui.main.mine.MinePresenter;
-import com.zkq.snail.ui.main.tools.ToolsContract;
 import com.zkq.snail.ui.main.tools.ToolsFragment;
 import com.zkq.snail.ui.main.tools.ToolsPresenter;
 import com.zkq.snail.ui.main.toolutil.CheckActivity;
@@ -35,7 +34,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author zkq
+ * @author:zkq
+ * create:2018/10/24 上午11:46
+ * email:zkq815@126.com
+ * desc:
  */
 public class MainActivity extends BaseActivity implements HomeContract.View, BasePagerAdapter.FragmentProducer{
 

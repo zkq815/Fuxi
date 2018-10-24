@@ -15,8 +15,8 @@ import com.bumptech.glide.Glide;
 import com.zkq.snail.R;
 
 /**
- * Created by zkq
- *  18-1-9.
+ * @author zkq
+ * @since 2018/10/24
  */
 public class NavigationItemView extends FrameLayout {
 
