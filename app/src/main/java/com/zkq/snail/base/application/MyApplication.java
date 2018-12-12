@@ -11,14 +11,13 @@ import android.support.multidex.MultiDex;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
-import com.zkq.snail.BuildConfig;
 import com.zkq.snail.base.Info;
 import com.zkq.snail.base.handler.IHandler;
 import com.zkq.snail.base.handler.LeakFreeHandler;
 import com.zkq.snail.common.ActivityStack;
 import com.zkq.snail.common.SimpleOkHttpStack;
 import com.zkq.snail.crash.CrashHelper;
-import com.zkq.snail.util.ImgUtil;
+import com.zkq.weapon.application.BaseApplication;
 
 import okhttp3.OkHttpClient;
 
@@ -26,7 +25,7 @@ import okhttp3.OkHttpClient;
  * @author zkq
  * @since 2018/10/24
  */
-public class MyApplication extends Application implements IHandler {
+public class MyApplication extends BaseApplication implements IHandler {
 
     @SuppressLint("StaticFieldLeak")
     private static MyApplication instance;
@@ -38,7 +37,7 @@ public class MyApplication extends Application implements IHandler {
 
     @Override
     public void handleMessage(Message msg) {
-        ImgUtil.destroy();
+//        ImgUtil.destroy();
     }
 
     @NonNull

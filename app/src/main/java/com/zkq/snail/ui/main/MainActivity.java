@@ -9,10 +9,9 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
+import android.view.View;
 
 import com.zkq.snail.R;
-import com.zkq.snail.base.ui.BaseActivity;
-import com.zkq.snail.base.ui.BaseFragment;
 import com.zkq.snail.customview.navigation.NavigationItem;
 import com.zkq.snail.customview.navigation.NavigationWidget;
 import com.zkq.snail.customview.viewpager.BasePagerAdapter;
@@ -29,6 +28,8 @@ import com.zkq.snail.ui.main.tools.ToolsFragment;
 import com.zkq.snail.ui.main.tools.ToolsPresenter;
 import com.zkq.snail.ui.main.toolutil.CheckActivity;
 import com.zkq.snail.ui.main.toolutil.CheckData;
+import com.zkq.weapon.base.BaseActivity;
+import com.zkq.weapon.base.BaseFragment;
 
 import java.util.Arrays;
 import java.util.List;
@@ -57,6 +58,9 @@ public class MainActivity extends BaseActivity implements HomeContract.View, Bas
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //全屏隐藏状态栏
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
         init();
     }
 

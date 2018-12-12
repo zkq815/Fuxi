@@ -1,4 +1,4 @@
-package com.zkq.snail.base.uri;
+package com.zkq.snail.util;
 
 import android.content.Context;
 import android.content.Intent;

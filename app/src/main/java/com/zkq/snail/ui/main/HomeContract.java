@@ -1,6 +1,5 @@
 package com.zkq.snail.ui.main;
 
-
 import android.app.Activity;
 
 import com.zkq.snail.base.mvp.BasePresenter;

@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.zkq.snail.ui.main.MainActivity;
 import com.zkq.snail.R;
-import com.zkq.snail.base.ui.BaseActivity;
+import com.zkq.weapon.base.BaseActivity;
 
 /**
  * @author:zkq
@@ -23,6 +23,7 @@ public class WelcomeActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         //全屏隐藏状态栏
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_welcome);
 
         new Handler().postDelayed(new Runnable() {

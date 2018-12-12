@@ -5,7 +5,7 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 
-import com.zkq.snail.base.uri.UriUtils;
+import com.zkq.snail.util.UriUtils;
 
 
 /**

@@ -18,8 +18,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-
-import com.zkq.snail.base.ui.BaseFragment;
+import com.zkq.weapon.base.BaseFragment;
 
 import java.util.Map;
 

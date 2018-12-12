@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.zkq.snail">
 
     <!-- 所需权限 -->
-    <!-- 网络权限 -->
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问帐户列表 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 更新设备状态使用证书 -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 获取网络状态 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取使用Wi-Fi等WLAN无线网络 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- sd卡写入权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 指纹识别权限 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 
     <application
+        android:name=".base.application.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
-        android:theme="@style/NoActionBar">
+        tools:replace="android:name,android:icon,supportsRtl">
 
         <!-- 欢迎页面 -->
         <activity

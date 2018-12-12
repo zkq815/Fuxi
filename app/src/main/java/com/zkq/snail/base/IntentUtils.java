@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 
 import com.zkq.snail.common.ActivityStack;
 import com.zkq.snail.ui.main.MainActivity;
@@ -40,7 +41,7 @@ public class IntentUtils {
         return false;
     }
 
-    private static final Class<? extends Activity> HOME_CLASS = MainActivity.class;
+    private static final Class<? extends AppCompatActivity> HOME_CLASS = MainActivity.class;
 
     public static void launchHome(@NonNull final Context context, final Intent intent) {
         final Intent i = intent != null ? intent : new Intent();

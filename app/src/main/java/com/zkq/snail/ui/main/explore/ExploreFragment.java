@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zkq.snail.R;
-import com.zkq.snail.base.ui.BaseFragment;
 import com.zkq.snail.databinding.FragmentExploreBinding;
+import com.zkq.weapon.base.BaseFragment;
 
 /**
  * @author:zkq
