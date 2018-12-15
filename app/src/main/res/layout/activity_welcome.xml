@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/start_pic"
     android:fitsSystemWindows="true"
-    tools:context="com.zkq.snail.ui.welcome.WelcomeActivity">
+    tools:context="com.zkq.fuxi.ui.welcome.WelcomeActivity">
 
 </android.support.constraint.ConstraintLayout>

@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context="com.zkq.snail.ui.welcome.WelcomeActivity">
+        tools:context="com.zkq.fuxi.ui.welcome.WelcomeActivity">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">

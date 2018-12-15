@@ -9,20 +9,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zkq.snail.ui.main.MainActivity">
+    tools:context="com.zkq.fuxi.ui.main.MainActivity">
 
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.zkq.snail.customview.viewpager.ScrollableViewPager
+        <com.zkq.fuxi.customview.viewpager.ScrollableViewPager
             android:id="@+id/home_viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="48dp" />
 
-        <com.zkq.snail.customview.navigation.NavigationWidget
+        <com.zkq.fuxi.customview.navigation.NavigationWidget
             android:id="@+id/home_navigation_widget"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
