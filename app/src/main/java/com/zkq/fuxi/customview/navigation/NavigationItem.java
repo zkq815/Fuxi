@@ -1,6 +1,7 @@
 package com.zkq.fuxi.customview.navigation;
 
 import android.support.annotation.DrawableRes;
+import android.support.annotation.StringRes;
 import android.util.SparseArray;
 
 import com.zkq.fuxi.R;
@@ -14,13 +15,14 @@ import java.util.List;
  */
 public enum NavigationItem {
     //首页
-    HOME("首页", R.drawable.nav_home, R.drawable.nav_home_activated),
-    MEMORY("记忆", R.drawable.nav_category, R.drawable.nav_category_activated),
-    EXPLORE("探索", R.drawable.nav_discovery, R.drawable.nav_discovery_activated),
-    TOOLS("工具", R.drawable.nav_cart, R.drawable.nav_cart_activate),
-    MINE("我的", R.drawable.nav_personal, R.drawable.nav_personal_activated);
+    HOME(R.string.main_main, R.drawable.nav_home, R.drawable.nav_home_activated),
+    MEMORY(R.string.main_buddhism, R.drawable.nav_category, R.drawable.nav_category_activated),
+    EXPLORE(R.string.main_prime, R.drawable.nav_discovery, R.drawable.nav_discovery_activated),
+    TOOLS(R.string.main_taoism, R.drawable.nav_cart, R.drawable.nav_cart_activate),
+    MINE(R.string.main_tool, R.drawable.nav_personal, R.drawable.nav_personal_activated);
 
-    public final String name;
+    @StringRes
+    public final int titleName;
 
     @DrawableRes
     public final int icon;
@@ -56,12 +58,12 @@ public enum NavigationItem {
         return map.get(type);
     }
 
-    NavigationItem(String name, int icon, int iconActivated) {
+    NavigationItem(int name, int icon, int iconActivated) {
         this(name, icon, iconActivated, true);
     }
 
-    NavigationItem(String name, int icon, int iconActivated, final boolean enable) {
-        this.name = name;
+    NavigationItem(int name, int icon, int iconActivated, final boolean enable) {
+        this.titleName = name;
         this.icon = icon;
         this.iconActivated = iconActivated;
         this.enable = enable;
@@ -81,7 +83,7 @@ public enum NavigationItem {
     @Override
     public String toString() {
         return "NavigationItem{" +
-                ", name='" + name + '\'' +
+                ", name='" + titleName + '\'' +
                 ", icon=" + icon +
                 ", iconActivated=" + iconActivated +
                 '}';

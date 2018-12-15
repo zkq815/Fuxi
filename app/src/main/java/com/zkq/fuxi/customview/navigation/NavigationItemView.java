@@ -64,7 +64,7 @@ public class NavigationItemView extends FrameLayout {
 
             mTitleView.setTextColor(getResources().getColorStateList(R.color.black));
         }
-        mTitleView.setText(navigationItem.name);
+        mTitleView.setText(navigationItem.titleName);
     }
 
     public void setSelectedState(boolean isSelected) {

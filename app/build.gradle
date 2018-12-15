@@ -74,7 +74,7 @@ dependencies {
     releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.ext.leakcanaryVerison"
     testImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.ext.leakcanaryVerison"
     //view server
-//    compile 'com.github.romainguy:ViewServer:017c01cd512cac3ec054d9eee05fc48c5a9d2de'
+    //compile 'com.github.romainguy:ViewServer:017c01cd512cac3ec054d9eee05fc48c5a9d2de'
     implementation 'com.android.volley:volley:1.1.0'
     androidTestImplementation 'junit:junit:4.12'
 }
