@@ -2,9 +2,9 @@
     <string name="app_name">伏羲</string>
     
     <!-- 首页 -->
-    <string name="main_main">混沌</string>
+    <string name="main_chaos">混沌</string>
     <string name="main_buddhism">佛教</string>
     <string name="main_prime">洪荒</string>
     <string name="main_taoism">道教</string>
-    <string name="main_tool">乾坤</string>
+    <string name="main_universe">乾坤</string>
 </resources>

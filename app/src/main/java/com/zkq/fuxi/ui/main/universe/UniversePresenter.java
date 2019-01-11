@@ -1,4 +1,4 @@
-package com.zkq.fuxi.ui.main.tools;
+package com.zkq.fuxi.ui.main.universe;
 
 import android.support.annotation.NonNull;
 
@@ -6,10 +6,11 @@ import android.support.annotation.NonNull;
  * @author:zkq
  * time:2018/10/6:16:11
  * email:zkq815@126.com
+ * desc: 乾坤页面逻辑处理
  */
-public class ToolsPresenter implements ToolsContract.Presenter{
-    private ToolsContract.View mView;
-    public ToolsPresenter(@NonNull ToolsContract.View view){
+public class UniversePresenter implements UniverseContract.Presenter{
+    private UniverseContract.View mView;
+    public UniversePresenter(@NonNull UniverseContract.View view){
         this.mView = view;
         view.setPresenter(this);
     }

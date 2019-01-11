@@ -2,6 +2,7 @@ package com.zkq.fuxi.ui.main;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcel;
@@ -10,6 +11,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.zkq.fuxi.R;
 import com.zkq.fuxi.customview.navigation.NavigationItem;
@@ -17,19 +19,20 @@ import com.zkq.fuxi.customview.navigation.NavigationWidget;
 import com.zkq.fuxi.customview.viewpager.BasePagerAdapter;
 import com.zkq.fuxi.customview.viewpager.ScrollableViewPager;
 import com.zkq.fuxi.customview.viewpager.ViewPagerWrapper;
-import com.zkq.fuxi.ui.main.explore.ExploreFragment;
-import com.zkq.fuxi.ui.main.home.DefaultFragment;
-import com.zkq.fuxi.ui.main.home.DefaultPresenter;
-import com.zkq.fuxi.ui.main.memory.MemoryFragment;
-import com.zkq.fuxi.ui.main.memory.MemoryPresenter;
-import com.zkq.fuxi.ui.main.mine.MineFragment;
-import com.zkq.fuxi.ui.main.mine.MinePresenter;
-import com.zkq.fuxi.ui.main.tools.ToolsFragment;
-import com.zkq.fuxi.ui.main.tools.ToolsPresenter;
-import com.zkq.fuxi.ui.main.toolutil.CheckActivity;
-import com.zkq.fuxi.ui.main.toolutil.CheckData;
+import com.zkq.fuxi.ui.main.prime.PrimeFragment;
+import com.zkq.fuxi.ui.main.chaos.ChaosPresenter;
+import com.zkq.fuxi.ui.main.chaos.ChaosFragment;
+import com.zkq.fuxi.ui.main.buddhism.BuddhismFragment;
+import com.zkq.fuxi.ui.main.buddhism.BuddhismPresenter;
+import com.zkq.fuxi.ui.main.universe.UniverseFragment;
+import com.zkq.fuxi.ui.main.universe.UniversePresenter;
+import com.zkq.fuxi.ui.main.taoism.TaoismFragment;
+import com.zkq.fuxi.ui.main.taoism.TaoismPresenter;
+import com.zkq.fuxi.util.CheckActivity;
+import com.zkq.fuxi.util.CheckData;
 import com.zkq.weapon.base.BaseActivity;
 import com.zkq.weapon.base.BaseFragment;
+import com.zkq.weapon.market.util.ZLog;
 
 import java.util.Arrays;
 import java.util.List;
@@ -40,7 +43,7 @@ import java.util.List;
  * email:zkq815@126.com
  * desc:
  */
-public class MainActivity extends BaseActivity implements HomeContract.View, BasePagerAdapter.FragmentProducer{
+public class HomeActivity extends BaseActivity implements HomeContract.View, BasePagerAdapter.FragmentProducer{
 
     public static final String PAGE_TYPE = "page_type";
 
@@ -58,10 +61,17 @@ public class MainActivity extends BaseActivity implements HomeContract.View, Bas
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //全屏隐藏状态栏
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
+        hideActionBar();
         init();
+    }
+
+    /**
+     * 全屏隐藏状态栏
+     * */
+    private void hideActionBar(){
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+        getWindow().setStatusBarColor(Color.TRANSPARENT);
+        getSupportActionBar().hide();
     }
 
     private void init() {
@@ -226,52 +236,47 @@ public class MainActivity extends BaseActivity implements HomeContract.View, Bas
     public Fragment produceFragment(int position) {
         BaseFragment fragment = null;
         switch (mNavigationItemList.get(position)) {
-            case HOME: {
-                DefaultFragment defaultfragment = new DefaultFragment();
-                new DefaultPresenter(defaultfragment);
-                fragment = defaultfragment;
+            case CHAOS: {
+                ChaosFragment chaosfragment = new ChaosFragment();
+                new ChaosPresenter(chaosfragment);
+                fragment = chaosfragment;
             }
             break;
-            case MEMORY: {
-                MemoryFragment memoryFragment = new MemoryFragment();
-                new MemoryPresenter(memoryFragment);
-//                return memoryFragment;
-                fragment = memoryFragment;
+            case BUDDHISM: {
+                BuddhismFragment buddhismFragment = new BuddhismFragment();
+                new BuddhismPresenter(buddhismFragment);
+                fragment = buddhismFragment;
             }
                 break;
-            case EXPLORE: {
-                ExploreFragment exploreFragment = new ExploreFragment();
+            case PRIME: {
+                PrimeFragment primeFragment = new PrimeFragment();
                 final Bundle bundle = new Bundle();
                 bundle.putParcelable("listener", changePageListener);
-                exploreFragment.setArguments(bundle);
-//                return exploreFragment;
-                fragment = exploreFragment;
+                primeFragment.setArguments(bundle);
+                fragment = primeFragment;
 
             }
                 break;
-            case TOOLS: {
-                ToolsFragment toolsFragment = new ToolsFragment();
+            case TAOISM: {
+                TaoismFragment taoisFragment = new TaoismFragment();
                 Bundle bundle = new Bundle();
                 bundle.putBoolean("isActivity", false);
                 bundle.putParcelable("listener", changePageListener);
-                toolsFragment.setArguments(bundle);
-                new ToolsPresenter(toolsFragment);
-//                return toolsFragment;
-                fragment = toolsFragment;
+                taoisFragment.setArguments(bundle);
+                new TaoismPresenter(taoisFragment);
+                fragment = taoisFragment;
             }
                 break;
-            case MINE: {
-                MineFragment mineFragment = new MineFragment();
-                new MinePresenter(mineFragment);
-//                return mineFragment;
-                fragment = mineFragment;
+            case UNIVERSE: {
+                UniverseFragment universeFragment = new UniverseFragment();
+                new UniversePresenter(universeFragment);
+                fragment = universeFragment;
             }
                 break;
             default:
-                DefaultFragment defaultfragment1 = new DefaultFragment();
-                new DefaultPresenter(defaultfragment1);
-//                return defaultfragment1;
-                fragment = defaultfragment1;
+                ChaosFragment defaultFragment = new ChaosFragment();
+                new ChaosPresenter(defaultFragment);
+                fragment = defaultFragment;
             break;
         }
 
@@ -281,5 +286,18 @@ public class MainActivity extends BaseActivity implements HomeContract.View, Bas
     @Override
     public void onBackPressed() {
         moveTaskToBack(true);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        hideActionBar();
+        ZLog.e("onRestart");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        ZLog.e("onStart");
     }
 }

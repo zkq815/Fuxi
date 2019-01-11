@@ -1,4 +1,4 @@
-package com.zkq.fuxi.ui.main.toolutil;
+package com.zkq.fuxi.util;
 
 import android.app.Activity;
 import android.os.Bundle;

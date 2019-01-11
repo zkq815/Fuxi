@@ -42,8 +42,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 首页 -->
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".ui.main.HomeActivity"
             android:screenOrientation="portrait" />
     </application>
 

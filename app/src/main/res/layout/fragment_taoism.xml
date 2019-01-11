@@ -10,19 +10,22 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         tools:context="com.zkq.fuxi.ui.welcome.WelcomeActivity">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/in_icon"/>
             <TextView
-                android:id="@+id/tv_mine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/red"
+                android:textColor="@color/blue_beika"
                 android:layout_centerInParent="true"
                 android:textSize="28sp"
-                android:text="我的页面"/>
+                android:text="@string/main_taoism"/>
         </RelativeLayout>
-
 
     </android.support.constraint.ConstraintLayout>
 </layout>

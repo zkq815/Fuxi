@@ -14,13 +14,17 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/in_icon"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/red"
+                android:textColor="@color/blue_beika"
                 android:layout_centerInParent="true"
                 android:textSize="28sp"
-                android:text="记忆页面"/>
+                android:text="@string/main_prime"/>
         </RelativeLayout>
 
     </android.support.constraint.ConstraintLayout>

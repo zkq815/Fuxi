@@ -1,14 +1,15 @@
-package com.zkq.fuxi.ui.main.home;
+package com.zkq.fuxi.ui.main.buddhism;
 
 import com.zkq.fuxi.base.mvp.BasePresenter;
 import com.zkq.fuxi.base.mvp.BaseView;
 
 /**
  * @author:zkq
- * create:2018/10/24 上午11:41
+ * time:2018/10/6:16:12
  * email:zkq815@126.com
+ * desc: 佛教页面接口
  */
-public interface DefaultContract {
+public interface BuddhismContract {
 
     interface View extends BaseView<Presenter> {
     }

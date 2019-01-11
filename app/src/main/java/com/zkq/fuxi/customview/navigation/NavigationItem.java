@@ -15,11 +15,11 @@ import java.util.List;
  */
 public enum NavigationItem {
     //首页
-    HOME(R.string.main_main, R.drawable.nav_home, R.drawable.nav_home_activated),
-    MEMORY(R.string.main_buddhism, R.drawable.nav_category, R.drawable.nav_category_activated),
-    EXPLORE(R.string.main_prime, R.drawable.nav_discovery, R.drawable.nav_discovery_activated),
-    TOOLS(R.string.main_taoism, R.drawable.nav_cart, R.drawable.nav_cart_activate),
-    MINE(R.string.main_tool, R.drawable.nav_personal, R.drawable.nav_personal_activated);
+    CHAOS(R.string.main_chaos, R.drawable.nav_home, R.drawable.nav_home_activated),
+    BUDDHISM(R.string.main_buddhism, R.drawable.nav_category, R.drawable.nav_category_activated),
+    PRIME(R.string.main_prime, R.drawable.nav_discovery, R.drawable.nav_discovery_activated),
+    TAOISM(R.string.main_taoism, R.drawable.nav_cart, R.drawable.nav_cart_activate),
+    UNIVERSE(R.string.main_universe, R.drawable.nav_personal, R.drawable.nav_personal_activated);
 
     @StringRes
     public final int titleName;

@@ -1,11 +1,13 @@
 package com.zkq.fuxi.ui.welcome;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Handler;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
-import com.zkq.fuxi.ui.main.MainActivity;
+import com.zkq.fuxi.ui.main.HomeActivity;
 import com.zkq.fuxi.R;
 import com.zkq.weapon.base.BaseActivity;
 
@@ -17,19 +19,20 @@ import com.zkq.weapon.base.BaseActivity;
  */
 public class WelcomeActivity extends BaseActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setActionBar();
         //全屏隐藏状态栏
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setStatusBarColor(Color.TRANSPARENT);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_welcome);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+                startActivity(new Intent(WelcomeActivity.this, HomeActivity.class));
                 finish();
             }
         },2000);

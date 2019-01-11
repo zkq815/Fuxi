@@ -29,10 +29,10 @@ android {
     }
 
     signingConfigs {
-        zkq {
-            keyAlias 'snail'
+        fuxi {
+            keyAlias 'fuxi'
             keyPassword 'cjyzkq123'
-            storeFile file('../key/snailkey.jks')
+            storeFile file('../key/fuxi.jks')
             storePassword 'cjyzkq123'
         }
     }
@@ -49,7 +49,10 @@ android {
 
         release {
             minifyEnabled true //是否混淆
-            signingConfig signingConfigs.zkq//签名文件相关信息
+            buildConfigField "boolean", "LOG_DEBUG", "true"//是否输出LOG信息
+            buildConfigField "boolean", "CATCH_CRASH_MAIN", "false"
+            buildConfigField "boolean", "CATCH_CRASH_BACKGROUND", "false"
+            signingConfig signingConfigs.fuxi//签名文件相关信息
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

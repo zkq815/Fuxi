@@ -1,4 +1,4 @@
-package com.zkq.fuxi.ui.main.mine;
+package com.zkq.fuxi.ui.main.universe;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zkq.fuxi.R;
-import com.zkq.fuxi.databinding.FragmentMineBinding;
+import com.zkq.fuxi.databinding.FragmentUniverseBinding;
 import com.zkq.weapon.base.BaseFragment;
 import com.zkq.weapon.base.WebViewPluginActivity;
 import com.zkq.weapon.constants.WeaponConstants;
@@ -19,16 +19,16 @@ import com.zkq.weapon.constants.WeaponConstants;
  * @author:zkq
  * create:2018/10/24 上午11:43
  * email:zkq815@126.com
- * desc: 我的页面
+ * desc: 乾坤页面
  */
 
-public class MineFragment extends BaseFragment implements MineContract.View{
+public class UniverseFragment extends BaseFragment implements UniverseContract.View{
 
-    private FragmentMineBinding mBinding;
+    private FragmentUniverseBinding mBinding;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_mine,container,false);
+        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_universe,container,false);
         mBinding.tvMine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +44,7 @@ public class MineFragment extends BaseFragment implements MineContract.View{
     }
 
     @Override
-    public void setPresenter(@NonNull MineContract.Presenter presenter) {
+    public void setPresenter(@NonNull UniverseContract.Presenter presenter) {
 
     }
 }

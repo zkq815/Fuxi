@@ -10,7 +10,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 
 import com.zkq.fuxi.common.ActivityStack;
-import com.zkq.fuxi.ui.main.MainActivity;
+import com.zkq.fuxi.ui.main.HomeActivity;
 
 import static com.zkq.fuxi.base.util.Preconditions.checkNotNull;
 
@@ -41,7 +41,7 @@ public class IntentUtils {
         return false;
     }
 
-    private static final Class<? extends AppCompatActivity> HOME_CLASS = MainActivity.class;
+    private static final Class<? extends AppCompatActivity> HOME_CLASS = HomeActivity.class;
 
     public static void launchHome(@NonNull final Context context, final Intent intent) {
         final Intent i = intent != null ? intent : new Intent();

@@ -1,4 +1,4 @@
-package com.zkq.fuxi.ui.main.tools;
+package com.zkq.fuxi.ui.main.buddhism;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -9,29 +9,27 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zkq.fuxi.R;
-import com.zkq.fuxi.databinding.FragmentToolsBinding;
+import com.zkq.fuxi.databinding.FragmentBuddhismBinding;
 import com.zkq.weapon.base.BaseFragment;
 
 /**
  * @author:zkq
- * create:2018/10/24 上午11:43
+ * create:2018/10/24 上午11:42
  * email:zkq815@126.com
- * desc: 工具页面
+ * desc: 佛教页面
  */
 
-public class ToolsFragment extends BaseFragment implements ToolsContract.View{
-
-    private FragmentToolsBinding mBinding;
-
+public class BuddhismFragment extends BaseFragment implements BuddhismContract.View {
+    private FragmentBuddhismBinding mBinding;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_tools,container,false);
+        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_buddhism,container,false);
         return mBinding.getRoot();
     }
 
     @Override
-    public void setPresenter(@NonNull ToolsContract.Presenter presenter) {
+    public void setPresenter(@NonNull BuddhismContract.Presenter presenter) {
 
     }
 }

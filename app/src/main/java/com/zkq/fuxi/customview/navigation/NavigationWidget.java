@@ -10,7 +10,7 @@ import android.widget.RelativeLayout;
 
 
 import com.zkq.fuxi.R;
-import com.zkq.fuxi.ui.main.toolutil.CheckData;
+import com.zkq.fuxi.util.CheckData;
 
 import java.util.ArrayList;
 import java.util.List;
