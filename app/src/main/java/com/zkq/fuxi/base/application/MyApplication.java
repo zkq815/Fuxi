@@ -11,6 +11,8 @@ import android.support.multidex.MultiDex;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.squareup.leakcanary.LeakCanary;
+import com.squareup.leakcanary.RefWatcher;
 import com.zkq.fuxi.base.Info;
 import com.zkq.fuxi.base.handler.IHandler;
 import com.zkq.fuxi.base.handler.LeakFreeHandler;
@@ -32,6 +34,7 @@ public class MyApplication extends BaseApplication implements IHandler {
     protected RequestQueue mRequestQueue;
     protected RequestQueue mLogRequestQueue;
 
+    private RefWatcher refWatcher;
     private static final int KILL_MSG = 211;
     private static final int KILL_MSG_WAIT_TIME = 5 * 55 * 1000;
 
@@ -75,11 +78,7 @@ public class MyApplication extends BaseApplication implements IHandler {
     @Override
     public void onCreate() {
         super.onCreate();
-
-//        if (LeakWatcher.init(application)) {
-//            // LeakCanary会创建单独的进程用于内存堆分析，这里不应该调用我们的初始化代码，直接返回即可
-//            return;
-//        }
+        refWatcher = LeakCanary.install(this);
 
         instance = this;
 
@@ -138,6 +137,11 @@ public class MyApplication extends BaseApplication implements IHandler {
 
     protected OkHttpClient getOkHttpClient() {
         return new OkHttpClient();
+    }
+
+    public static RefWatcher getRefWatcher(Context context) {
+        MyApplication application = (MyApplication) context.getApplicationContext();
+        return application.refWatcher;
     }
 
     public static RequestQueue getRequestQueue() {

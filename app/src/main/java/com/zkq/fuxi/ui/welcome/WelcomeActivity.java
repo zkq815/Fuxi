@@ -22,7 +22,7 @@ public class WelcomeActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setActionBar();
+        showActionBar(false, false, "");
         //全屏隐藏状态栏
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().setStatusBarColor(Color.TRANSPARENT);
@@ -35,7 +35,7 @@ public class WelcomeActivity extends BaseActivity {
                 startActivity(new Intent(WelcomeActivity.this, HomeActivity.class));
                 finish();
             }
-        },2000);
+        }, 2000);
     }
 
     @Override
