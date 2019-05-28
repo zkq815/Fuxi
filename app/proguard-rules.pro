@@ -134,8 +134,9 @@
 -keep public class * extends android.view.View
 -keep public class com.android.vending.licensing.ILicensingService
 -keep public class android.arch.** { *;}
-#
--keep class android.support.** {*;}                                             # 保持support包
+
+# 保持support包
+-keep class android.support.** {*;}
 
 -keepclasseswithmembernames class * {
     native <methods>;
@@ -194,7 +195,7 @@
 }
 -keep class **$Properties
 #-keep class org.sqlite.** { *; }
--keep class android.database.sqlite.**
+-keep class android.database.sqlite{ *;}
 -keep class com.db.models.**
 -keepclassmembers class com.db.models.** { *; }
 
@@ -221,7 +222,11 @@
 -keepclassmembers class * {
     @android.webkit.JavascriptInterface <methods>;
 }
-##--------------------------------第三方--------------------------------------------
+##------------------------------个人武器库-------------------------------------------##
+-keep class com.zkq.weapon.market.glide.config{ *;}
+-keep class com.zkq.weapon.market.glide.glideimpl{ *;}
+
+##--------------------------------第三方--------------------------------------------##
 
 #alibaba fastjson
 -keepattributes Signature
@@ -309,3 +314,26 @@
 #org.apache.commons
 -keep class org.apache.** { *;}
 -dontwarn org.apache.**
+
+#vlayout tangram
+-keepattributes InnerClasses
+-keep class com.alibaba.android.vlayout.ExposeLinearLayoutManagerEx { *; }
+-keep class android.support.v7.widget.RecyclerView$LayoutParams { *; }
+-keep class android.support.v7.widget.RecyclerView$ViewHolder { *; }
+-keep class android.support.v7.widget.ChildHelper { *; }
+-keep class android.support.v7.widget.RecyclerView$LayoutManager { *; }
+-dontwarn com.tmall.wireless.tangram.BaseTangramEngine
+-dontwarn com.tmall.wireless.tangram.MVHelper
+-dontwarn com.tmall.wireless.tangram.BaseTangramEngine
+-dontwarn com.tmall.wireless.tangram.TangramBuilder$InnerBuilder
+-dontwarn com.tmall.wireless.tangram.dataparser.concrete.BaseCellBinder
+-dontwarn com.tmall.wireless.tangram.dataparser.concrete.PojoAdapterBuilder
+-dontwarn com.tmall.wireless.tangram.dataparser.concrete.PojoGroupBasicAdapter
+-dontwarn com.tmall.wireless.tangram.ext.HorizontalOverScrollBounceEffectDecoratorExt
+-dontwarn com.tmall.wireless.tangram.ext.SwipeItemTouchListener
+-dontwarn com.tmall.wireless.tangram.view.BannerView
+-dontwarn com.tmall.wireless.tangram.view.LinearScrollView
+-dontwarn com.tmall.wireless.tangram.view.BannerView$BannerIndicator
+
+##lottie animal
+-keep class com.airbnb.lottie { *;}
