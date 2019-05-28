@@ -8,7 +8,7 @@
 //
 //
 //import com.zkq.snail.common.Constants;
-//import com.zkq.snail.util.XLog;
+//import com.zkq.snail.util.ZLog;
 //
 //import java.util.HashMap;
 //
@@ -33,7 +33,7 @@
 //                    intent.putExtras(bundle);
 //                    intent.putExtra(Constants.INTENT_ITEM_TYPE, ProductType.ITEM.type());
 //                } else {
-//                    XLog.e(fromActivity, "数据异常，无法跳转");
+//                    ZLog.e(fromActivity, "数据异常，无法跳转");
 //                    return;
 //                }
 //                break;
@@ -48,7 +48,7 @@
 //                    intent.putExtras(bundle);
 //                    intent.putExtra(Constants.INTENT_ITEM_TYPE, ProductType.SKU.type());
 //                } else {
-//                    XLog.e(fromActivity, "数据异常，无法跳转");
+//                    ZLog.e(fromActivity, "数据异常，无法跳转");
 //                    return;
 //                }
 //                break;
@@ -93,7 +93,7 @@
 //                }
 //
 //                if (!flag) {
-//                    XLog.e(fromActivity, "数据异常，无法跳转");
+//                    ZLog.e(fromActivity, "数据异常，无法跳转");
 //                    return;
 //                }
 //                break;

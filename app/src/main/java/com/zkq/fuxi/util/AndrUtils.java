@@ -128,7 +128,7 @@ public final class AndrUtils {
             imsi = getTelephonyManager(context).getSubscriberId();
         } catch (Exception e) {
 //            if (BuildConfig.LOG_DEBUG) {
-//                XLog.e("getIMSI", e);
+//                ZLog.e("getIMSI", e);
 //            }
         }
 
@@ -145,7 +145,7 @@ public final class AndrUtils {
             imei = getTelephonyManager(context).getDeviceId();
         } catch (Exception e) {
 //            if (BuildConfig.LOG_DEBUG) {
-//                XLog.e("getIMEI", e);
+//                ZLog.e("getIMEI", e);
 //            }
         }
 

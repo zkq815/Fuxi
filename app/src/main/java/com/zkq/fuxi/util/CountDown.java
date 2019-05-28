@@ -5,6 +5,7 @@ import android.os.Looper;
 import android.os.SystemClock;
 
 import com.zkq.fuxi.BuildConfig;
+import com.zkq.weapon.market.util.ZLog;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -39,7 +40,7 @@ public abstract class CountDown implements Runnable {
 
     public void start() {
         if (BuildConfig.LOG_DEBUG) {
-            XLog.d("start");
+            ZLog.d("start");
         }
         if (null == executorService || executorService.isShutdown()) {
             executorService = Executors.newSingleThreadScheduledExecutor();
@@ -72,7 +73,7 @@ public abstract class CountDown implements Runnable {
 
     public void destroy() {
         if (BuildConfig.LOG_DEBUG) {
-            XLog.d("destroy");
+            ZLog.d("destroy");
         }
         if (null != executorService) {
             executorService.shutdown();

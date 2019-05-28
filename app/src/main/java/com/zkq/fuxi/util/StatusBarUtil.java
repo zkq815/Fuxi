@@ -8,6 +8,8 @@ import android.view.Window;
 import android.view.WindowManager;
 
 
+import com.zkq.weapon.market.util.ZLog;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -30,17 +32,17 @@ public class StatusBarUtil {
         try {
             mSetStatusBarColorIcon = Activity.class.getMethod("setStatusBarDarkIcon", int.class);
         } catch (Exception e) {
-            XLog.i(TAG, "printStackTrace:" + e.getMessage());
+            ZLog.i(TAG, "printStackTrace:" + e.getMessage());
         }
         try {
             mSetStatusBarDarkIcon = Activity.class.getMethod("setStatusBarDarkIcon", boolean.class);
         } catch (Exception e) {
-            XLog.i(TAG, "printStackTrace:" + e.getMessage());
+            ZLog.i(TAG, "printStackTrace:" + e.getMessage());
         }
         try {
             mStatusBarColorFiled = WindowManager.LayoutParams.class.getField("statusBarColor");
         } catch (Exception e) {
-            XLog.i(TAG, "printStackTrace:" + e.getMessage());
+            ZLog.i(TAG, "printStackTrace:" + e.getMessage());
         }
     }
 
@@ -90,7 +92,7 @@ public class StatusBarUtil {
             try {
                 mSetStatusBarColorIcon.invoke(activity, color);
             } catch (Exception e) {
-                XLog.i(TAG, "printStackTrace:" + e.getMessage());
+                ZLog.i(TAG, "printStackTrace:" + e.getMessage());
             }
         } else {
             boolean whiteColor = isBlackColor(color, 50);
@@ -116,7 +118,7 @@ public class StatusBarUtil {
                 setStatusBarDarkIcon(window.getDecorView(), true);
             }
         } catch (Exception e) {
-            XLog.i(TAG, "printStackTrace:" + e.getMessage());
+            ZLog.i(TAG, "printStackTrace:" + e.getMessage());
         }
     }
 
@@ -161,7 +163,7 @@ public class StatusBarUtil {
                 return true;
             }
         } catch (Exception e) {
-            XLog.i(TAG, "printStackTrace:" + e.getMessage());
+            ZLog.i(TAG, "printStackTrace:" + e.getMessage());
         }
         return false;
     }
@@ -201,7 +203,7 @@ public class StatusBarUtil {
                     window.setAttributes(winParams);
                 }
             } catch (Exception e) {
-                XLog.i(TAG, "printStackTrace:" + e.getMessage());
+                ZLog.i(TAG, "printStackTrace:" + e.getMessage());
             }
         }
     }
@@ -233,7 +235,7 @@ public class StatusBarUtil {
             try {
                 mSetStatusBarDarkIcon.invoke(activity, dark);
             } catch (Exception e) {
-                XLog.i(TAG, "printStackTrace:" + e.getMessage());
+                ZLog.i(TAG, "printStackTrace:" + e.getMessage());
             }
         } else {
             if (flag) {

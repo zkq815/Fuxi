@@ -153,7 +153,7 @@ public class ActivityStack {
 //                }
 //            }
 
-//            XLog.e(msg.toString());
+//            ZLog.e(msg.toString());
 //        }
     }
 

@@ -2,7 +2,7 @@ package com.zkq.fuxi.common;
 
 
 import com.zkq.fuxi.BuildConfig;
-import com.zkq.fuxi.util.XLog;
+import com.zkq.weapon.market.util.ZLog;
 
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.RejectedExecutionHandler;
@@ -33,7 +33,7 @@ public class ThreadPool {
                         @Override
                         public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
                             if (BuildConfig.LOG_DEBUG) {
-                                XLog.e("discard " + r);
+                                ZLog.e("discard " + r);
                             }
                         }
                     });

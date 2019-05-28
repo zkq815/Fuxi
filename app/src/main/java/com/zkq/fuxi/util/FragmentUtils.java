@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import android.view.View;
 
+import com.zkq.weapon.market.util.ZLog;
+
 import java.util.List;
 
 /**
@@ -42,7 +44,7 @@ public class FragmentUtils {
             try {
                 f = clz.newInstance();
             } catch (Exception e) {
-                XLog.t("getOrCreateFragment: " + savedInstanceState + " " + clz, e);
+                ZLog.t("getOrCreateFragment: " + savedInstanceState + " " + clz, e);
             }
         }
 

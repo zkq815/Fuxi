@@ -3,6 +3,8 @@ package com.zkq.fuxi.util;
 import android.os.Handler;
 import android.os.Looper;
 
+import com.zkq.weapon.market.util.ZLog;
+
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -32,7 +34,7 @@ public class CountDownN implements Runnable {
 
     public void start() {
         if (isDestroyed) {
-            XLog.e(this, "already been destroyed");
+            ZLog.e(this, "already been destroyed");
             return;
         }
         ensureExecutor();

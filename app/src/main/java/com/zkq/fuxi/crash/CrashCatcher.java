@@ -2,9 +2,11 @@ package com.zkq.fuxi.crash;
 
 import android.os.Handler;
 import android.os.Looper;
+
+import com.zkq.weapon.market.util.ZLog;
+
 import androidx.annotation.NonNull;
 
-import com.zkq.fuxi.util.XLog;
 
 /**
  * @author zkq
@@ -57,12 +59,12 @@ public class CrashCatcher {
 
     public static synchronized void install(final ICrashHandler crashHandler, final boolean main, final boolean background) {
         if (!main && !background) {
-            XLog.i(TAG, "at lease one of main & background should be true");
+            ZLog.i(TAG, "at lease one of main & background should be true");
             return;
         }
 
         if (sInstalled) {
-            XLog.i(TAG, "already installed, uninstall before install again");
+            ZLog.i(TAG, "already installed, uninstall before install again");
             return;
         }
 

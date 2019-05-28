@@ -18,9 +18,6 @@ import com.zkq.fuxi.common.ActivityStack;
 import com.zkq.fuxi.common.SimpleOkHttpStack;
 import com.zkq.fuxi.crash.CrashHelper;
 import com.zkq.weapon.application.BaseApplication;
-
-//import leakcanary.LeakCanary;
-//import leakcanary.RefWatcher;
 import okhttp3.OkHttpClient;
 
 /**
@@ -33,8 +30,6 @@ public class MyApplication extends BaseApplication implements IHandler {
     private static MyApplication instance;
     protected RequestQueue mRequestQueue;
     protected RequestQueue mLogRequestQueue;
-
-//    private RefWatcher refWatcher;
     private static final int KILL_MSG = 211;
     private static final int KILL_MSG_WAIT_TIME = 5 * 55 * 1000;
 
@@ -78,7 +73,6 @@ public class MyApplication extends BaseApplication implements IHandler {
     @Override
     public void onCreate() {
         super.onCreate();
-//        refWatcher = LeakCanary.install(this);
 
         instance = this;
 
@@ -138,11 +132,6 @@ public class MyApplication extends BaseApplication implements IHandler {
     protected OkHttpClient getOkHttpClient() {
         return new OkHttpClient();
     }
-
-//    public static RefWatcher getRefWatcher(Context context) {
-//        MyApplication application = (MyApplication) context.getApplicationContext();
-//        return application.refWatcher;
-//    }
 
     public static RequestQueue getRequestQueue() {
         if (instance.mRequestQueue == null) {
