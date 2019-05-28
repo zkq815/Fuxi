@@ -1,6 +1,6 @@
 package com.zkq.fuxi.ui.main.taoism;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * @author:zkq

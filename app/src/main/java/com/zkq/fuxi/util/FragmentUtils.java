@@ -1,10 +1,12 @@
 package com.zkq.fuxi.util;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+
 import android.view.View;
 
 import java.util.List;
@@ -48,7 +50,7 @@ public class FragmentUtils {
     }
 
     /**
-     * 只适用于设置了{@link android.support.v4.app.FragmentPagerAdapter}的ViewPager
+     * 只适用于设置了{@link FragmentPagerAdapter}的ViewPager
      *
      * @param fm      {@link FragmentManager}
      * @param contain fragment容器
@@ -65,7 +67,7 @@ public class FragmentUtils {
      * @param viewId contain的ID
      * @param id     fragment在adapter中的序号
      * @return fragment的TAG
-     * @see android.support.v4.app.FragmentPagerAdapter#makeFragmentName(int, long)
+     * @see FragmentPagerAdapter#makeFragmentName(int, long)
      */
     private static String makeFragmentName(int viewId, long id) {
         return "android:switcher:" + viewId + ":" + id;

@@ -1,11 +1,8 @@
 package com.zkq.fuxi.crash;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.NonNull;
 
-import com.zkq.fuxi.BuildConfig;
+import androidx.annotation.NonNull;
 
 /**
  * @author zkq

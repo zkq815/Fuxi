@@ -2,7 +2,7 @@ package com.zkq.fuxi.base;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.DisplayMetrics;
 
 import com.zkq.fuxi.base.application.MyApplication;

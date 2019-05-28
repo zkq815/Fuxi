@@ -1,6 +1,6 @@
 package com.zkq.fuxi.ui.main.prime;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * @author:zkq

@@ -2,7 +2,7 @@ package com.zkq.fuxi.base.util;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.text.TextUtils;
 
 import com.zkq.fuxi.util.UriUtils;

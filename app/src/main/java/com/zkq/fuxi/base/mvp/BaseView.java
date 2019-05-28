@@ -16,7 +16,7 @@
 
 package com.zkq.fuxi.base.mvp;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * @author zkq

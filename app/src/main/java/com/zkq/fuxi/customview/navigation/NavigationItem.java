@@ -1,7 +1,7 @@
 package com.zkq.fuxi.customview.navigation;
 
-import android.support.annotation.DrawableRes;
-import android.support.annotation.StringRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.StringRes;
 import android.util.SparseArray;
 
 import com.zkq.fuxi.R;

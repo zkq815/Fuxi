@@ -25,7 +25,7 @@ android {
         versionCode 1
         versionName "1.0"
         multiDexEnabled true//dex分包支持
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     signingConfigs {
@@ -73,11 +73,9 @@ configurations.all {
 
 dependencies {
     implementation "com.github.zkq815:weapon:$rootProject.ext.weaponVersion"
-    implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.constraintLayoutVersion"
     //内存泄露检测工具使用
-    debugImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.ext.leakcanaryVerison"
-    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.ext.leakcanaryVerison"
-    testImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.ext.leakcanaryVerison"
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:${rootProject.ext.leakcanaryVerison}"
     //view server
     //compile 'com.github.romainguy:ViewServer:017c01cd512cac3ec054d9eee05fc48c5a9d2de'
     implementation 'com.android.volley:volley:1.1.0'

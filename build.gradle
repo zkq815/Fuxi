@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.3.0'
     }
 }
 
@@ -21,17 +21,17 @@ allprojects {
 ext {
     // Sdk and tools
     minSdkVersion = 21
-    targetSdkVersion = 27
-    compileSdkVersion = 27
-    buildToolsVersion = '27.0.3'
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
     // App dependencies
-    supportLibraryVersion = '25.4.0'
+    supportLibraryVersion = '1.0.0-beta01'
     junitVersion = '4.12'
     constraintLayoutVersion = '1.1.3'
     //个人武器库
-    weaponVersion = '1.1.4.8'
+    weaponVersion = '1.1.5.3'
     //第三方依赖
-    leakcanaryVerison = "1.6.3"
+    leakcanaryVerison = "2.0-alpha-2"
 
 }
 
