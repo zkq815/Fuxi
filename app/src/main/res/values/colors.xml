@@ -142,4 +142,5 @@
 
     <color name="flash_sale_bg">#fdf8ee</color>
     <color name="flash_sale_red">#f61d45</color>
+    <color name="bg_home_module">#ffffff</color>
 </resources>

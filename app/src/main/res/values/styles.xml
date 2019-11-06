@@ -10,4 +10,8 @@
 
     <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
 
+
+    <!--自定义网络加载框-->
+    <style name="m_base_loading_net_progress_bar" parent="Base.Widget.AppCompat.ProgressBar" />
+
 </resources>

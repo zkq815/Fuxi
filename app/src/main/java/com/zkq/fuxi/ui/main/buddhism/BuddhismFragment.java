@@ -4,13 +4,24 @@ import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.zkq.fuxi.R;
+import com.zkq.fuxi.basehodler.adapter.AdapterTest;
+import com.zkq.fuxi.basehodler.datamodel.EdtionImageDataModel;
+import com.zkq.fuxi.basehodler.module.SlideShowEdtionModule;
+import com.zkq.fuxi.basehodler.operation.BaseEdtionOperationModel;
+import com.zkq.fuxi.basehodler.operation.SlideShowInsideOperationModel;
 import com.zkq.fuxi.databinding.FragmentBuddhismBinding;
 import com.zkq.weapon.base.BaseFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author:zkq
@@ -21,11 +32,32 @@ import com.zkq.weapon.base.BaseFragment;
 
 public class BuddhismFragment extends BaseFragment implements BuddhismContract.View {
     private FragmentBuddhismBinding mBinding;
+    private RecyclerView rvTest;
+    private AdapterTest test;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_buddhism,container,false);
+        rvTest = mBinding.rvTest;
+        rvTest.setLayoutManager(new LinearLayoutManager(getContext()));
+        test = new AdapterTest(getContext(),getDataList());
+        rvTest.setAdapter(test);
         return mBinding.getRoot();
+    }
+
+    private List<BaseEdtionOperationModel> getDataList(){
+        List<BaseEdtionOperationModel> list = new ArrayList<BaseEdtionOperationModel>(1);
+        SlideShowEdtionModule module = new SlideShowEdtionModule();
+        ArrayList<EdtionImageDataModel> templist = new ArrayList<>();
+        for (int i = 0; i < 7; i++) {
+            EdtionImageDataModel modelTemp = new EdtionImageDataModel();
+            modelTemp.setImgUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559068148060&di=78736a70f2410d555522f19b138f46bc&imgtype=0&src=http%3A%2F%2Fp2.ssl.cdn.btime.com%2Ft0182ef20bbc3d3aec9.jpg%3Fsize%3D640x849");
+            templist.add(modelTemp);
+        }
+        module.setDataList(templist);
+        SlideShowInsideOperationModel model = new SlideShowInsideOperationModel(getContext(), module);
+        list.add(model);
+        return list;
     }
 
     @Override

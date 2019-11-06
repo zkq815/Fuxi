@@ -62,4 +62,41 @@ public class Constants {
     //购物车
     public static final String CART_EDIT = "编辑";
     public static final String CART_NORMAL = "完成";
+
+    /**
+     * 自动循环viewpager，循环间隔时间为4秒
+     */
+    public static final short VIEW_PAGER_AUTO_SCROLL_INTERVAL = 4 * 1000;
+    /**
+     * 首页底部导航栏Tab切换动画默认持续时间
+     */
+    public static final int HOME_CONTAINER_NAVIGATION_BAR_ANIMATION_DURATION = 100;
+    /**
+     * 否
+     */
+    public static final int NO = 0;
+    /**
+     * 是
+     */
+    public static final int YES = 1;
+    /**
+     * 是
+     */
+    public static final String YES_STR = "1";
+    /**
+     * 否
+     */
+    public static final String NO_STR = "0";
+    /**
+     * 正确
+     */
+    public static final int SUCCESS = 0;
+    /**
+     * 错误
+     */
+    public static final int ERROR = 1;
+    /**
+     * 最后一页，没有更多数据的标识
+     */
+    public static final int ISLASTPAGE = 1;
 }

@@ -7,9 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.bumptech.glide.Glide;
+import com.tencent.mmkv.MMKV;
 import com.zkq.fuxi.ui.main.HomeActivity;
 import com.zkq.fuxi.R;
 import com.zkq.weapon.base.BaseActivity;
+import com.zkq.weapon.market.glide.glideimpl.GlideImageLoader;
 
 /**
  * @author:zkq
@@ -28,7 +31,6 @@ public class WelcomeActivity extends BaseActivity {
         getWindow().setStatusBarColor(Color.TRANSPARENT);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_welcome);
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
