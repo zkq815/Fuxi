@@ -30,6 +30,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
+        tools:ignore="LockedOrientationActivity"
         tools:replace="android:name,android:icon,supportsRtl">
 
         <!-- 欢迎页面 -->

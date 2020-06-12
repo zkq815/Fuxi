@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
  * @author:zkq
  * create:2018/10/24 上午11:49
  * email:zkq815@126.com
- * desc:
+ * desc: 底部导航工具类
  */
 public class NavigationBarUtils {
     private static Method setNavigationBarIconColor;

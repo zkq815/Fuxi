@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/big"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:visibility="gone" />
 
     <LinearLayout
         android:id="@+id/normal"
@@ -16,8 +21,8 @@
             android:id="@+id/nav_icon"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp" />
 
         <TextView
             android:id="@+id/nav_title"
@@ -30,11 +35,5 @@
             android:textSize="10sp" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/big"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:visibility="gone" />
 
 </merge>

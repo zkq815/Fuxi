@@ -18,7 +18,7 @@ import com.zkq.weapon.market.glide.glideimpl.GlideImageLoader;
  * @author:zkq
  * create:2018/10/24 上午11:45
  * email:zkq815@126.com
- * desc:
+ * desc: 开屏页
  */
 public class WelcomeActivity extends BaseActivity {
 

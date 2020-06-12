@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <data>
 
-    </data>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.zkq.fuxi.ui.welcome.WelcomeActivity">
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        tools:context="com.zkq.fuxi.ui.welcome.WelcomeActivity">
+        android:visibility="gone">
 
-        <RelativeLayout
-            android:visibility="gone"
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@drawable/in_icon"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/blue_beika"
-                android:layout_centerInParent="true"
-                android:textSize="28sp"
-                android:text="@string/main_buddhism"/>
-        </RelativeLayout>
+            android:layout_height="100dp"
+            android:background="@drawable/in_icon" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_test"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_buddhism"
+            android:textColor="@color/blue_beika"
+            android:textSize="28sp" />
+    </RelativeLayout>
 
-    </LinearLayout>
-</layout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

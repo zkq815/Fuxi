@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/white" />
 
     <LinearLayout
         android:id="@+id/bar"
@@ -18,8 +11,14 @@
         android:background="@android:color/transparent"
         android:gravity="bottom"
         android:orientation="horizontal"
-        android:paddingBottom="5dp"
+        android:paddingStart="28dp"
         android:paddingEnd="28dp"
-        android:paddingStart="28dp" />
+        android:paddingBottom="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" />
 
 </merge>

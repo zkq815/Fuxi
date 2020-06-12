@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
  * @author:zkq
  * create:2018/10/24 上午11:46
  * email:zkq815@126.com
- * desc:
+ * desc: 首页presenter
  */
 public class HomePresenter implements HomeContract.Presenter {
 

@@ -9,7 +9,7 @@ import android.view.MotionEvent;
  * @author:zkq
  * create:2018/10/24 上午11:45
  * email:zkq815@126.com
- * desc:
+ * desc:可滚动viewpager
  */
 public class ScrollableViewPager extends ViewPager {
     private boolean isPagingEnabled = true;

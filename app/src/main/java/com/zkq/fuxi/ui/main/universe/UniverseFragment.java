@@ -1,16 +1,18 @@
 package com.zkq.fuxi.ui.main.universe;
 
 import android.content.Intent;
-import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.zkq.fuxi.R;
-import com.zkq.fuxi.databinding.FragmentUniverseBinding;
 import com.zkq.weapon.base.BaseFragment;
 import com.zkq.weapon.base.WebViewPluginActivity;
 import com.zkq.weapon.constants.WeaponConstants;
@@ -24,12 +26,16 @@ import com.zkq.weapon.constants.WeaponConstants;
 
 public class UniverseFragment extends BaseFragment implements UniverseContract.View{
 
-    private FragmentUniverseBinding mBinding;
+    private View rootView;
+
+    @BindView(R.id.tv_mine)
+    TextView tvMine;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_universe,container,false);
-        mBinding.tvMine.setOnClickListener(new View.OnClickListener() {
+        rootView = inflater.inflate(R.layout.fragment_universe,container,false);
+        ButterKnife.bind(rootView);
+        tvMine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), WebViewPluginActivity.class);
@@ -40,7 +46,7 @@ public class UniverseFragment extends BaseFragment implements UniverseContract.V
                 getActivity().startActivity(intent);
             }
         });
-        return mBinding.getRoot();
+        return rootView;
     }
 
     @Override

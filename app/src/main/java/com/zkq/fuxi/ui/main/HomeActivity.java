@@ -9,6 +9,9 @@ import android.os.Parcel;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 import android.text.TextUtils;
 import android.view.View;
 
@@ -40,16 +43,17 @@ import java.util.List;
  * @author:zkq
  * create:2018/10/24 上午11:46
  * email:zkq815@126.com
- * desc:
+ * desc: 首页
  */
 public class HomeActivity extends BaseActivity implements HomeContract.View, BasePagerAdapter.FragmentProducer{
 
     public static final String PAGE_TYPE = "page_type";
+    @BindView(R.id.home_navigation_widget)
+    NavigationWidget mNavigationWidget;
 
     private HomePresenter mHomePresenter;
-
     private HomeContract.Presenter mPresenter;
-    private NavigationWidget mNavigationWidget;
+
     private ViewPagerWrapper<NavigationItem> mHomeViewPagerWrapper;
     private List<NavigationItem> mNavigationItemList = Arrays.asList(NavigationItem.get());
     /**
@@ -60,6 +64,7 @@ public class HomeActivity extends BaseActivity implements HomeContract.View, Bas
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         hideActionBar();
         init();
     }
@@ -74,14 +79,10 @@ public class HomeActivity extends BaseActivity implements HomeContract.View, Bas
     }
 
     private void init() {
-
-        mNavigationWidget = (NavigationWidget) findViewById(R.id.home_navigation_widget);
-
         BasePagerAdapter<NavigationItem> adapter = new BasePagerAdapter<>(getSupportFragmentManager(), this);
         mHomeViewPagerWrapper = new ViewPagerWrapper((ScrollableViewPager) findViewById(R.id.home_viewpager), 5);
         mHomeViewPagerWrapper.setAdapter(adapter);
         mHomeViewPagerWrapper.setPageScrollEnabled(false);
-
         mHomePresenter = new HomePresenter(this);
 
         mPresenter.subscribe();

@@ -4,12 +4,13 @@ import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import butterknife.ButterKnife;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.zkq.fuxi.R;
-import com.zkq.fuxi.databinding.FragmentTaoismBinding;
 import com.zkq.weapon.base.BaseFragment;
 
 /**
@@ -21,13 +22,14 @@ import com.zkq.weapon.base.BaseFragment;
 
 public class TaoismFragment extends BaseFragment implements TaoismContract.View{
 
-    private FragmentTaoismBinding mBinding;
+    private View rootView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_taoism,container,false);
-        return mBinding.getRoot();
+        rootView = inflater.inflate(R.layout.fragment_taoism,container,false);
+        ButterKnife.bind(rootView);
+        return rootView;
     }
 
     @Override

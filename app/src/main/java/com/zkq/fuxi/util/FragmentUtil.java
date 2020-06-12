@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * @author:zkq
  * create:2018/10/24 上午11:45
  * email:zkq815@126.com
- * desc:
+ * desc: fragment工具类
  */
 
 public class FragmentUtil {

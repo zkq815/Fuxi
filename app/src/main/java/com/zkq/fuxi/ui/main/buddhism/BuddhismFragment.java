@@ -1,11 +1,12 @@
 package com.zkq.fuxi.ui.main.buddhism;
 
-import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,6 @@ import com.zkq.fuxi.basehodler.datamodel.EdtionImageDataModel;
 import com.zkq.fuxi.basehodler.module.SlideShowEdtionModule;
 import com.zkq.fuxi.basehodler.operation.BaseEdtionOperationModel;
 import com.zkq.fuxi.basehodler.operation.SlideShowInsideOperationModel;
-import com.zkq.fuxi.databinding.FragmentBuddhismBinding;
 import com.zkq.weapon.base.BaseFragment;
 
 import java.util.ArrayList;
@@ -31,18 +31,20 @@ import java.util.List;
  */
 
 public class BuddhismFragment extends BaseFragment implements BuddhismContract.View {
-    private FragmentBuddhismBinding mBinding;
-    private RecyclerView rvTest;
+    @BindView(R.id.rv_test)
+    RecyclerView rvTest;
+
+    private View rootView;
     private AdapterTest test;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_buddhism,container,false);
-        rvTest = mBinding.rvTest;
+        rootView = inflater.inflate(R.layout.fragment_buddhism,container,false);
+        ButterKnife.bind(rootView);
         rvTest.setLayoutManager(new LinearLayoutManager(getContext()));
         test = new AdapterTest(getContext(),getDataList());
         rvTest.setAdapter(test);
-        return mBinding.getRoot();
+        return rootView;
     }
 
     private List<BaseEdtionOperationModel> getDataList(){

@@ -20,7 +20,7 @@ import java.io.RandomAccessFile;
  * @author:zkq
  * create:2018/10/24 上午11:48
  * email:zkq815@126.com
- * desc:
+ * desc: GUID工具类
  */
 public class GUID {
 
