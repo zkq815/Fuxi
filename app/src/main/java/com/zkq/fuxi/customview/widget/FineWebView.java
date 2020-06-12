@@ -1,4 +1,4 @@
-package com.zkq.fuxi.base.web;
+package com.zkq.fuxi.customview.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -7,6 +7,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.webkit.WebView;
+
+import com.zkq.fuxi.util.WebViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;

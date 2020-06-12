@@ -30,10 +30,12 @@ import com.zkq.fuxi.ui.main.universe.UniverseFragment;
 import com.zkq.fuxi.ui.main.universe.UniversePresenter;
 import com.zkq.fuxi.ui.main.taoism.TaoismFragment;
 import com.zkq.fuxi.ui.main.taoism.TaoismPresenter;
-import com.zkq.fuxi.util.CheckActivity;
-import com.zkq.fuxi.util.CheckData;
 import com.zkq.weapon.base.BaseActivity;
 import com.zkq.weapon.base.BaseFragment;
+import com.zkq.weapon.market.tools.ToolAndroid;
+import com.zkq.weapon.market.tools.ToolApp;
+import com.zkq.weapon.market.tools.ToolFragment;
+import com.zkq.weapon.market.tools.ToolList;
 import com.zkq.weapon.market.util.ZLog;
 
 import java.util.Arrays;
@@ -186,7 +188,7 @@ public class HomeActivity extends BaseActivity implements HomeContract.View, Bas
      * 获取对应 tab 在 viewpager 中的 item 位置
      */
     private int getTabPosition() {
-        if (!CheckData.hasData(mNavigationItemList)) {
+        if (!ToolList.hasData(mNavigationItemList)) {
             return 0;
         }
         final NavigationItem navigationItem = NavigationItem.from(mPageType);
@@ -204,7 +206,7 @@ public class HomeActivity extends BaseActivity implements HomeContract.View, Bas
 
     @Override
     public boolean isAlive() {
-        return CheckActivity.isActivityAlive(getActivity());
+        return ToolFragment.isActivityAlive(getActivity());
     }
 
     private final ChangePageListener changePageListener = new ChangePageListener() {

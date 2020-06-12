@@ -10,7 +10,7 @@ import android.widget.RelativeLayout;
 
 
 import com.zkq.fuxi.R;
-import com.zkq.fuxi.util.CheckData;
+import com.zkq.weapon.market.tools.ToolList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,7 +55,7 @@ public class NavigationWidget extends RelativeLayout {
      * @param listener           回调
      */
     public void setData(List<NavigationItem> navigationItemList, int selectPosition, final OnNavigationItemSelectListener listener) {
-        if (CheckData.hasData(navigationItemList)) {
+        if (ToolList.hasData(navigationItemList)) {
             if (mItemViewList == null) {
                 mItemViewList = new ArrayList<>();
             } else {

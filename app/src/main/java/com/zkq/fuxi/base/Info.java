@@ -5,8 +5,9 @@ import android.os.Build;
 import androidx.annotation.NonNull;
 import android.util.DisplayMetrics;
 
+import com.alibaba.android.arouter.utils.PackageUtils;
 import com.zkq.fuxi.base.application.MyApplication;
-import com.zkq.fuxi.base.util.PackageUtils;
+import com.zkq.weapon.market.tools.ToolAndroid;
 
 
 /**
@@ -21,7 +22,7 @@ public class Info {
     private static boolean isFlyme;
 
     public static void init(@NonNull final Context context) {
-        isFlyme = PackageUtils.isInstalled(context, "com.meizu.account");
+        isFlyme = ToolAndroid.isInstalled(context, "com.meizu.account");
     }
 
     public static boolean isFlyme() {

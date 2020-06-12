@@ -1,14 +1,16 @@
-//package com.zkq.snail.ui.main.toolutil;
+//package com.zkq.fuxi.util;
 //
 //import android.app.Activity;
 //import android.content.Intent;
 //import android.os.Bundle;
-//import android.support.annotation.NonNull;
+//import androidx.annotation.NonNull;
 //import android.text.TextUtils;
 //
 //
-//import com.zkq.snail.common.Constants;
-//import com.zkq.snail.util.ZLog;
+//import com.zkq.fuxi.common.AppConstantsUrl;
+//import com.zkq.fuxi.common.Constants;
+//import com.zkq.weapon.base.WebViewPluginActivity;
+//import com.zkq.weapon.market.util.ZLog;
 //
 //import java.util.HashMap;
 //

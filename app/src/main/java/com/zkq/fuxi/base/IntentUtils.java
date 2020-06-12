@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.zkq.fuxi.common.ActivityStack;
 import com.zkq.fuxi.ui.main.HomeActivity;
 
-import static com.zkq.fuxi.base.util.Preconditions.checkNotNull;
+import static com.zkq.fuxi.util.Preconditions.checkNotNull;
 
 /**
  * @author zkq

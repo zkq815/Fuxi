@@ -1,4 +1,4 @@
-package com.zkq.fuxi.base.web;
+package com.zkq.fuxi.util;
 
 import android.view.ViewGroup;
 import android.webkit.WebView;

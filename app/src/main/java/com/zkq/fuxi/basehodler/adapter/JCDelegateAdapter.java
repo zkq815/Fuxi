@@ -16,7 +16,7 @@ import com.alibaba.android.vlayout.VirtualLayoutAdapter;
 import com.alibaba.android.vlayout.VirtualLayoutManager;
 import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 import com.zkq.fuxi.R;
-import com.zkq.fuxi.util.ToolException;
+import com.zkq.weapon.market.tools.ToolException;
 
 import java.util.ArrayList;
 import java.util.Collections;

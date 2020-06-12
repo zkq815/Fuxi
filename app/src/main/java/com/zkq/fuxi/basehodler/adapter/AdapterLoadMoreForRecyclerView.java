@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 
 import com.zkq.fuxi.R;
 import com.zkq.fuxi.customview.widget.RecyclerViewLoadMore;
-import com.zkq.fuxi.util.ToolException;
+import com.zkq.weapon.market.tools.ToolException;
 
 import java.util.List;
 

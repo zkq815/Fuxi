@@ -11,11 +11,11 @@ import android.widget.ImageView;
 
 import com.zkq.fuxi.basehodler.datamodel.EdtionImageDataModel;
 import com.zkq.fuxi.basehodler.module.BaseNativeEdtionModule;
-import com.zkq.fuxi.util.ToolApp;
 import com.zkq.weapon.market.glide.ImageLoader;
 import com.zkq.weapon.market.tools.ToolAndroid;
+import com.zkq.weapon.market.tools.ToolApp;
 import com.zkq.weapon.market.tools.ToolList;
-import com.zkq.weapon.market.util.ZLog;
+import com.zkq.weapon.market.tools.ToolScreen;
 
 import java.util.List;
 
@@ -219,7 +219,7 @@ public abstract class BaseNativeEdtionHolder extends BaseViewHolder {
 //        int[] ratioNumArr = BusinessCommon.parseColonSplit(whRatio);
         int[] ratioNumArr = {1,1};
         if (ratioNumArr.length == 2) {
-            return (ToolAndroid.getPhoneWidth(containerView.getContext()) * ratioNumArr[1]) / ratioNumArr[0];
+            return (ToolScreen.getScreenWidth(containerView.getContext()) * ratioNumArr[1]) / ratioNumArr[0];
         }
         return 0;
     }

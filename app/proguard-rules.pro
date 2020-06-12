@@ -337,3 +337,6 @@
 
 ##lottie animal
 -keep class com.airbnb.lottie { *;}
+#ijk 视频混淆
+-keep class tv.danmaku.ijk.** { *; }
+-dontwarn tv.danmaku.ijk.**

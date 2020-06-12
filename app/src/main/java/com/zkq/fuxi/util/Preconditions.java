@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.zkq.fuxi.base.util;
+package com.zkq.fuxi.util;
 
 import java.util.Collection;
 
