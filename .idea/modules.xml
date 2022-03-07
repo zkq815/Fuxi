@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Fuxi.iml" filepath="$PROJECT_DIR$/Fuxi.iml" group="Fuxi" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Fuxi/app" />
+      <module fileurl="file://$PROJECT_DIR$/Fuxi.iml" filepath="$PROJECT_DIR$/Fuxi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Fuxi.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Fuxi.app.iml" />
     </modules>
   </component>
 </project>

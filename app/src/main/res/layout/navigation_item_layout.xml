@@ -31,6 +31,7 @@
             android:layout_gravity="center_horizontal"
             android:includeFontPadding="false"
             android:maxLines="1"
+            android:text="123123"
             android:textColor="@color/grey_3e"
             android:textSize="10sp" />
 

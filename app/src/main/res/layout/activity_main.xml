@@ -15,12 +15,12 @@
             android:id="@+id/home_viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="48dp" />
+            android:layout_above="@+id/home_navigation_widget"/>
 
         <com.zkq.fuxi.customview.navigation.NavigationWidget
             android:id="@+id/home_navigation_widget"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/d_48"
             android:layout_alignParentBottom="true" />
 
     </RelativeLayout>

@@ -28,13 +28,13 @@ public class UniverseFragment extends BaseFragment implements UniverseContract.V
 
     private View rootView;
 
-    @BindView(R.id.tv_mine)
     TextView tvMine;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_universe,container,false);
         ButterKnife.bind(rootView);
+        tvMine = rootView.findViewById(R.id.tv_mine);
         tvMine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

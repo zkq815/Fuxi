@@ -16,12 +16,36 @@
             android:background="@drawable/in_icon" />
 
         <TextView
+            android:id="@+id/tv_begin_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/main_chaos"
             android:textColor="@color/blue_beika"
-            android:textSize="28sp" />
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_now_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_chaos"
+            android:textColor="@color/blue_beika"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_begin_time"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_time_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_chaos"
+            android:textColor="@color/blue_beika"
+            android:layout_below="@+id/tv_now_time"
+            android:textSize="16sp" />
+
+
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

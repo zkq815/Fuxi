@@ -31,7 +31,6 @@ import java.util.List;
  */
 
 public class BuddhismFragment extends BaseFragment implements BuddhismContract.View {
-    @BindView(R.id.rv_test)
     RecyclerView rvTest;
 
     private View rootView;
@@ -41,6 +40,7 @@ public class BuddhismFragment extends BaseFragment implements BuddhismContract.V
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_buddhism,container,false);
         ButterKnife.bind(rootView);
+        rvTest = rootView.findViewById(R.id.rv_test);
         rvTest.setLayoutManager(new LinearLayoutManager(getContext()));
         test = new AdapterTest(getContext(),getDataList());
         rvTest.setAdapter(test);

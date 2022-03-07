@@ -5,7 +5,6 @@ import android.os.Build;
 import androidx.annotation.NonNull;
 import android.util.DisplayMetrics;
 
-import com.alibaba.android.arouter.utils.PackageUtils;
 import com.zkq.fuxi.base.application.MyApplication;
 import com.zkq.weapon.market.tools.ToolAndroid;
 
@@ -16,7 +15,7 @@ import com.zkq.weapon.market.tools.ToolAndroid;
  */
 public class Info {
 
-    /**
+    /*
      * 是否魅族手机，根据是否有魅族账号系统判断
      */
     private static boolean isFlyme;

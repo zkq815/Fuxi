@@ -50,7 +50,6 @@ import java.util.List;
 public class HomeActivity extends BaseActivity implements HomeContract.View, BasePagerAdapter.FragmentProducer{
 
     public static final String PAGE_TYPE = "page_type";
-    @BindView(R.id.home_navigation_widget)
     NavigationWidget mNavigationWidget;
 
     private HomePresenter mHomePresenter;
@@ -66,6 +65,7 @@ public class HomeActivity extends BaseActivity implements HomeContract.View, Bas
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mNavigationWidget = findViewById(R.id.home_navigation_widget);
         ButterKnife.bind(this);
         hideActionBar();
         init();

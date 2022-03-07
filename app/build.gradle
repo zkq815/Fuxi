@@ -72,12 +72,13 @@ configurations.all {
 }
 
 dependencies {
-    implementation "com.github.zkq815:weapon:$rootProject.ext.weaponVersion"
-    implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.constraintLayoutVersion"
+    api "com.github.zkq815:weapon:$rootProject.ext.weaponVersion"
+    api "androidx.constraintlayout:constraintlayout:$rootProject.ext.constraintLayoutVersion"
+    api "androidx.appcompat:appcompat:1.1.0"
     //内存泄露检测工具使用
-    debugImplementation "com.squareup.leakcanary:leakcanary-android:${rootProject.ext.leakcanaryVerison}"
+//    debugImplementation "com.squareup.leakcanary:leakcanary-android:${rootProject.ext.leakcanaryVerison}"
     //view server
     //compile 'com.github.romainguy:ViewServer:017c01cd512cac3ec054d9eee05fc48c5a9d2de'
-    implementation 'com.android.volley:volley:1.1.0'
+    api 'com.android.volley:volley:1.1.0'
     androidTestImplementation 'junit:junit:4.12'
 }
